@@ -6,6 +6,10 @@ class UsersController < ApplicationController
 # There’s actually a variation of find_by called find_by! with an exclamation mark. The purpose of that is to throw the record not found error:
 
 
+  def index
+    @users = User.all
+  end
+
   def show
     @user = User.find_by!(username: params.fetch(:username))
   end
