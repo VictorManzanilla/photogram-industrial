@@ -12,6 +12,8 @@
 
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <% puts "connected_users class: #{connected_users.first.class.name}" if connected_users.any? %>
+
 
       <ul class="list-group list-group-flush">
         <% connected_users.each do |other_user| %>
